@@ -2,8 +2,7 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-const  GOOGLE_API_KEY='AIzaSyDPtPc1AkSKw3f3LzOEGAiAyUKpMFNuRQI';
-
+// 
 class LocationHelper {
   static String generatePrev({double longt,double lat}){
     return 'https://maps.googleapis.com/maps/api/staticmap?center=&$lat,$longt&zoom=16&size=600x300&maptype=roadmap&markers=color:red%7Clabel:A%7C$lat,$longt&key=$GOOGLE_API_KEY';
